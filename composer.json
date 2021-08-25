@@ -1,0 +1,22 @@
+{
+  "name": "mvmaasakkers/puzzles",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Martijn van Maasakkers",
+      "email": "martijn@vanmaasakkers.net"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Puzzles\\": "src/",
+      "Puzzles\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
