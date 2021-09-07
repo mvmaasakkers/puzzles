@@ -3,9 +3,8 @@
 namespace Puzzles\AdventOfCode\Year2015;
 
 use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\AdventOfCode\ArrayFlatten;
 use Puzzles\AdventOfCode\DefaultInput;
-use Puzzles\AdventOfCode\IsAssocArray;
+use Puzzles\Helpers\IsAssocArray;
 
 class Day12 extends AdventOfCode
 {

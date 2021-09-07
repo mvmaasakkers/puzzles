@@ -3,7 +3,7 @@
 namespace Puzzles\AdventOfCode\Year2015;
 
 use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\AdventOfCode\ComputePermutations;
+use Puzzles\Helpers\ComputePermutations;
 use Puzzles\AdventOfCode\DefaultInput;
 
 class Day09 extends AdventOfCode

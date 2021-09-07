@@ -3,6 +3,7 @@
 namespace Puzzles\AdventOfCode;
 
 use JetBrains\PhpStorm\Pure;
+use Puzzles\Helpers\Grid2DPosition;
 
 abstract class AdventOfCode
 {

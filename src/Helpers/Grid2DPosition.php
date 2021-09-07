@@ -1,6 +1,6 @@
 <?php
 
-namespace Puzzles\AdventOfCode;
+namespace Puzzles\Helpers;
 
 class Grid2DPosition
 {

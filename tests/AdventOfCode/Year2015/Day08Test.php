@@ -11,8 +11,8 @@ class Day08Test extends TestCase
     public function testPart1()
     {
         $testCases = [
-            ['input' => new DefaultInput($this->testInputPart1), 'expected' => 12],
-            ['input' => new DefaultInput($this->actualInput), 'expected' => 1371],
+            ['input' => new DefaultInput($this->testInputPart1), 'expected' => 0],
+            ['input' => new DefaultInput($this->actualInput), 'expected' => 0],
         ];
 
         foreach ($testCases as $n => $testCase) {
@@ -23,8 +23,8 @@ class Day08Test extends TestCase
     public function testPart2()
     {
         $testCases = [
-            ['input' => new DefaultInput($this->testInputPart1), 'expected' => 19],
-            ['input' => new DefaultInput($this->actualInput), 'expected' => 2117],
+            ['input' => new DefaultInput($this->testInputPart1), 'expected' => 0],
+            ['input' => new DefaultInput($this->actualInput), 'expected' => 0],
         ];
 
         foreach ($testCases as $n => $testCase) {
