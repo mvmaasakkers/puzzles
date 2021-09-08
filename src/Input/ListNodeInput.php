@@ -4,7 +4,7 @@ namespace App\Input;
 
 use App\Helpers\ListNode;
 
-class ListNodeInput implements InputInterface
+class ListNodeInput extends InputInterface
 {
     private ListNode $input;
 

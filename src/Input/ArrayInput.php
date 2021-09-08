@@ -2,7 +2,7 @@
 
 namespace App\Input;
 
-class ArrayInput implements InputInterface
+class ArrayInput extends InputInterface
 {
     private array $input;
     private int $inputLength;

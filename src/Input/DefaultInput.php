@@ -2,15 +2,16 @@
 
 namespace App\Input;
 
-class DefaultInput implements InputInterface
+class DefaultInput extends InputInterface
 {
     private string $input;
     private int $inputLength;
 
-    public function __construct(string $input)
+    public function __construct(string $input, array $options = [])
     {
         $this->input = $input;
         $this->inputLength = strlen($input);
+        $this->setOptions($options);
     }
 
     /**
