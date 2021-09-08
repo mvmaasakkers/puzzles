@@ -1,8 +1,8 @@
 <?php
 
-namespace App\AdventOfCode;
+namespace App\Input;
 
-class DefaultInput
+class DefaultInput implements InputInterface
 {
     private string $input;
     private int $inputLength;

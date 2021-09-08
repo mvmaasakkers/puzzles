@@ -4,7 +4,7 @@ namespace App\AdventOfCode\Year2015;
 
 use JetBrains\PhpStorm\Pure;
 use App\AdventOfCode\AdventOfCode;
-use App\AdventOfCode\DefaultInput;
+use App\Input\DefaultInput;
 
 class Day11 extends AdventOfCode
 {

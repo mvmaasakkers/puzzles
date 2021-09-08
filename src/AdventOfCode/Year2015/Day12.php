@@ -3,7 +3,7 @@
 namespace App\AdventOfCode\Year2015;
 
 use App\AdventOfCode\AdventOfCode;
-use App\AdventOfCode\DefaultInput;
+use App\Input\DefaultInput;
 use App\Helpers\IsAssocArray;
 
 class Day12 extends AdventOfCode

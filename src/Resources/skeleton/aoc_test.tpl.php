@@ -3,7 +3,7 @@
 namespace <?= $namespace ?>;
 
 use PHPUnit\Framework\TestCase;
-use App\AdventOfCode\DefaultInput;
+use App\Input\DefaultInput;
 use App\AdventOfCode\<?= $year ?>\<?= $day ?>;
 
 class <?= $class_name ?> extends TestCase

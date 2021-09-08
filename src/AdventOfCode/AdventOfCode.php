@@ -3,6 +3,7 @@
 namespace App\AdventOfCode;
 
 use JetBrains\PhpStorm\Pure;
+use App\Input\DefaultInput;
 use App\Helpers\Grid2DPosition;
 
 abstract class AdventOfCode

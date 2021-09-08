@@ -4,7 +4,7 @@ namespace App\AdventOfCode\Year2015;
 
 use App\AdventOfCode\AdventOfCode;
 use App\Helpers\ComputePermutations;
-use App\AdventOfCode\DefaultInput;
+use App\Input\DefaultInput;
 
 class Day09 extends AdventOfCode
 {

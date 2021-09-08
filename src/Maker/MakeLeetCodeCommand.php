@@ -11,55 +11,51 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 
-class MakeAocCommand extends AbstractMaker
+class MakeLeetCodeCommand extends AbstractMaker
 {
     public static function getCommandName(): string
     {
-        return 'make:aoc';
+        return 'make:leetcode';
     }
 
     public static function getCommandDescription(): string
     {
-        return 'Creates a new AoC setup';
+        return 'Creates a new LeetCode setup';
     }
 
     public function configureCommand(Command $command, InputConfiguration $inputConf)
     {
         $command
-            ->addArgument('year', InputArgument::REQUIRED, 'What year? (e.g. <fg=yellow>2015</>)')
-            ->addArgument('day', InputArgument::REQUIRED, 'What day? (e.g. <fg=yellow>06</>)');
+            ->addArgument('number', InputArgument::REQUIRED, 'What number? (e.g. <fg=yellow>123</>)');
     }
 
     public function generate(InputInterface $input, ConsoleStyle $io, Generator $generator)
     {
-        $day = sprintf('%02d', (int)$input->getArgument('day'));
-        $dayClass = sprintf('Day%s', $day);
-        $year = sprintf('%d', $input->getArgument('year'));
-        $yearClass = sprintf('Year%s', $year);
+        $number = sprintf('%04d', (int)$input->getArgument('number'));
+        $numberClass = sprintf('Solution%s', $number);
 
         $dayClassNameDetails = $generator->createClassNameDetails(
-            $dayClass,
-            sprintf('AdventOfCode\\Year%s\\', $year),
+            $numberClass,
+            'LeetCode\\Puzzles\\',
         );
 
         $generator->generateClass(
             $dayClassNameDetails->getFullName(),
-            'src/Resources/skeleton/aoc.tpl.php',
+            'src/Resources/skeleton/leetcode.tpl.php',
             []
         );
 
         $dayTestClassNameDetails = $generator->createClassNameDetails(
-            $dayClass,
-            sprintf('Tests\\AdventOfCode\\%s\\', $yearClass),
+            $numberClass,
+            sprintf('Tests\\LeetCode\\Puzzles\\'),
             'Test'
         );
 
         $generator->generateClass(
             $dayTestClassNameDetails->getFullName(),
-            'src/Resources/skeleton/aoc_test.tpl.php',
+            'src/Resources/skeleton/leetcode_test.tpl.php',
             [
-                'day' => $dayClass,
-                'year' => $yearClass,
+                'numberClass' => $numberClass,
             ]
         );
 
