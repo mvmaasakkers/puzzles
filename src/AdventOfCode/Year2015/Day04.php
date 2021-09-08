@@ -1,10 +1,10 @@
 <?php
 
-namespace Puzzles\AdventOfCode\Year2015;
+namespace App\AdventOfCode\Year2015;
 
 use JetBrains\PhpStorm\Pure;
-use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\AdventOfCode\DefaultInput;
+use App\AdventOfCode\AdventOfCode;
+use App\AdventOfCode\DefaultInput;
 
 class Day04 extends AdventOfCode
 {

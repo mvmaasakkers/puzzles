@@ -1,9 +1,9 @@
 <?php
 
-namespace Puzzles\AdventOfCode;
+namespace App\AdventOfCode;
 
 use JetBrains\PhpStorm\Pure;
-use Puzzles\Helpers\Grid2DPosition;
+use App\Helpers\Grid2DPosition;
 
 abstract class AdventOfCode
 {

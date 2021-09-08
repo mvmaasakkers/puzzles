@@ -1,10 +1,10 @@
 <?php
 
-namespace Puzzles\AdventOfCode\Year2015;
+namespace App\AdventOfCode\Year2015;
 
-use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\AdventOfCode\DefaultInput;
-use Puzzles\Helpers\Grid2DPosition;
+use App\AdventOfCode\AdventOfCode;
+use App\AdventOfCode\DefaultInput;
+use App\Helpers\Grid2DPosition;
 
 class Day03 extends AdventOfCode
 {

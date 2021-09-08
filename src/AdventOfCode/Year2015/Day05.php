@@ -1,9 +1,9 @@
 <?php
 
-namespace Puzzles\AdventOfCode\Year2015;
+namespace App\AdventOfCode\Year2015;
 
-use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\AdventOfCode\DefaultInput;
+use App\AdventOfCode\AdventOfCode;
+use App\AdventOfCode\DefaultInput;
 
 class Day05 extends AdventOfCode
 {

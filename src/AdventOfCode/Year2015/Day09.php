@@ -1,10 +1,10 @@
 <?php
 
-namespace Puzzles\AdventOfCode\Year2015;
+namespace App\AdventOfCode\Year2015;
 
-use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\Helpers\ComputePermutations;
-use Puzzles\AdventOfCode\DefaultInput;
+use App\AdventOfCode\AdventOfCode;
+use App\Helpers\ComputePermutations;
+use App\AdventOfCode\DefaultInput;
 
 class Day09 extends AdventOfCode
 {

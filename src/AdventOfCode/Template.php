@@ -1,6 +1,6 @@
 <?php
 
-namespace Puzzles\AdventOfCode;
+namespace App\AdventOfCode;
 
 class Template extends AdventOfCode
 {

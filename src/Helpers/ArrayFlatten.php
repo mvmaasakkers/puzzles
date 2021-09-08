@@ -1,6 +1,6 @@
 <?php
 
-namespace Puzzles\Helpers;
+namespace App\Helpers;
 
 class ArrayFlatten
 {

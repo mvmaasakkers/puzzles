@@ -1,10 +1,10 @@
 <?php
 
-namespace Puzzles\AdventOfCode\Year2015;
+namespace App\AdventOfCode\Year2015;
 
-use Puzzles\AdventOfCode\AdventOfCode;
-use Puzzles\AdventOfCode\DefaultInput;
-use Puzzles\Helpers\IsAssocArray;
+use App\AdventOfCode\AdventOfCode;
+use App\AdventOfCode\DefaultInput;
+use App\Helpers\IsAssocArray;
 
 class Day12 extends AdventOfCode
 {

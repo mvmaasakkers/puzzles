@@ -1,11 +1,11 @@
 <?php
 
-namespace Puzzles\Tests\AdventOfCode\Year2015;
+namespace App\Tests\AdventOfCode\Year2015;
 
 use PHPUnit\Framework\TestCase;
-use Puzzles\AdventOfCode\DefaultInput;
-use Puzzles\AdventOfCode\Year2015\Day02;
-use Puzzles\AdventOfCode\Year2015\Day03;
+use App\AdventOfCode\DefaultInput;
+use App\AdventOfCode\Year2015\Day02;
+use App\AdventOfCode\Year2015\Day03;
 
 class Day03Test extends TestCase
 {
