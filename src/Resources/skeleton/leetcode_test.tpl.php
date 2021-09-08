@@ -2,7 +2,7 @@
 
 namespace <?= $namespace ?>;
 
-use App\LeetCode\Puzzles\<?= $numberClass ?>;
+use App\LeetCode\Problems\<?= $numberClass ?>;
 use App\Input\DefaultInput;
 use PHPUnit\Framework\TestCase;
 

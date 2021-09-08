@@ -1,6 +1,6 @@
 <?php
 
-namespace App\LeetCode\Puzzles;
+namespace App\LeetCode\Problems;
 
 use App\Helpers\ListNode;
 use App\Input\ArrayInput;

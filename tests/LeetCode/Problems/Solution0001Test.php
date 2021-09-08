@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Tests\LeetCode\Puzzles;
+namespace App\Tests\LeetCode\Problems;
 
 use App\Input\ArrayInput;
-use App\LeetCode\Puzzles\Solution0001;
+use App\LeetCode\Problems\Solution0001;
 use PHPUnit\Framework\TestCase;
 
 class Solution0001Test extends TestCase

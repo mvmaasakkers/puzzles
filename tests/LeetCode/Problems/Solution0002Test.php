@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Tests\LeetCode\Puzzles;
+namespace App\Tests\LeetCode\Problems;
 
 use App\Helpers\ListNode;
 use App\Input\ArrayInput;
-use App\LeetCode\Puzzles\Solution0002;
+use App\LeetCode\Problems\Solution0002;
 use PHPUnit\Framework\TestCase;
 
 class Solution0002Test extends TestCase

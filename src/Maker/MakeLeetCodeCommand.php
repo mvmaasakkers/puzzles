@@ -36,7 +36,7 @@ class MakeLeetCodeCommand extends AbstractMaker
 
         $dayClassNameDetails = $generator->createClassNameDetails(
             $numberClass,
-            'LeetCode\\Puzzles\\',
+            'LeetCode\\Problems\\',
         );
 
         $generator->generateClass(
@@ -47,7 +47,7 @@ class MakeLeetCodeCommand extends AbstractMaker
 
         $dayTestClassNameDetails = $generator->createClassNameDetails(
             $numberClass,
-            sprintf('Tests\\LeetCode\\Puzzles\\'),
+            sprintf('Tests\\LeetCode\\Problems\\'),
             'Test'
         );
 
