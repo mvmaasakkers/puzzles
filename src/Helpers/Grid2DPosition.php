@@ -11,7 +11,7 @@ class Grid2DPosition
      * @param int $x
      * @param int $y
      */
-    public function __construct(int $x, int $y)
+    public function __construct(int $x = 0, int $y = 0)
     {
         $this->x = $x;
         $this->y = $y;
@@ -20,6 +20,14 @@ class Grid2DPosition
     public function __toString(): string
     {
         return "x-{$this->x}-y-{$this->y}";
+    }
+
+    public function fromString(string $value): self {
+         sscanf($value, 'x-%d-y-%d', $x, $y);
+         $this->setX($x);
+         $this->setY($y);
+
+         return $this;
     }
 
     /**

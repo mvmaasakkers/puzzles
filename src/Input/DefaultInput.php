@@ -38,6 +38,14 @@ class DefaultInput extends InputInterface
         );
     }
 
+    public function getSplitTrimCharacterArray(): array
+    {
+        return array_map(
+            fn(string $v): array => str_split(trim($v)),
+            explode("\n", $this->getRawInput())
+        );
+    }
+
     /**
      * @return array
      */

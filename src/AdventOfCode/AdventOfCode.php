@@ -2,16 +2,13 @@
 
 namespace App\AdventOfCode;
 
+use App\Input\InputInterface;
 use JetBrains\PhpStorm\Pure;
 use App\Input\DefaultInput;
 use App\Helpers\Grid2DPosition;
 
 abstract class AdventOfCode
 {
-    abstract public function part1(DefaultInput $input): mixed;
-
-    abstract public function part2(DefaultInput $input): mixed;
-
     /**
      * @param int $startX
      * @param int $startY
