@@ -53,4 +53,12 @@ class DefaultInput extends InputInterface
     {
         return str_split($this->getRawInput());
     }
+
+    /**
+     * @return array
+     */
+    public function getIntCodeInput(): array
+    {
+        return array_map(static fn($value) => (int)$value, explode(',', trim($this->getRawInput())));
+    }
 }
