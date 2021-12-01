@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\AdventOfCode\Year2021;
 
 use App\AdventOfCode\AdventOfCode;
@@ -23,16 +25,14 @@ class Day01 extends AdventOfCode
         return count(array_filter($data, static function ($v, $k) use ($data) {
             return (
                 isset($data[$k + 3]) &&
-                $data[$k] + $data[$k + 1] + $data[$k + 2] < $data[$k + 1] + $data[$k + 2] + $data[$k + 3]
+                array_sum(array_slice($data, $k, 3)) < array_sum(array_slice($data, $k + 1, 3))
             );
         }, ARRAY_FILTER_USE_BOTH));
     }
 
     private function parseInput(DefaultInput $input): array
     {
-        return array_map(static function (string $v) {
-            return (int)$v;
-        }, $input->getSplitTrimLines());
+        return $input->getSplitTrimLinesAsInt();
     }
 }
 

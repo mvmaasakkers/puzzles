@@ -1,17 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests\AdventOfCode\Year2021;
 
-use PHPUnit\Framework\TestCase;
-use App\Input\DefaultInput;
 use App\AdventOfCode\Year2021\Day01;
+use App\Input\DefaultInput;
+use PHPUnit\Framework\TestCase;
 
 class Day01Test extends TestCase
 {
     public function testPart1(): void
     {
         $testCases = [
-            ['input' => new DefaultInput('199
+            [
+                'input' => new DefaultInput('199
 200
 208
 210
@@ -20,7 +23,9 @@ class Day01Test extends TestCase
 240
 269
 260
-263'), 'expected' => 7],
+263'),
+                'expected' => 7
+            ],
             ['input' => new DefaultInput($this->actualInput), 'expected' => 1602],
         ];
 
@@ -32,7 +37,8 @@ class Day01Test extends TestCase
     public function testPart2(): void
     {
         $testCases = [
-            ['input' => new DefaultInput('199
+            [
+                'input' => new DefaultInput('199
 200
 208
 210
@@ -41,7 +47,9 @@ class Day01Test extends TestCase
 240
 269
 260
-263'), 'expected' => 5],
+263'),
+                'expected' => 5
+            ],
             ['input' => new DefaultInput($this->actualInput), 'expected' => 1633],
         ];
 
