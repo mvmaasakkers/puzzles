@@ -38,6 +38,14 @@ class DefaultInput extends InputInterface
         );
     }
 
+    public function getSplitTrimLinesAsInt(): array
+    {
+        return array_map(
+            fn(string $v): int => (int)trim($v),
+            explode("\n", $this->getRawInput())
+        );
+    }
+
     public function getSplitTrimCharacterArray(): array
     {
         return array_map(
