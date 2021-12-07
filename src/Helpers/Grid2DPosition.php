@@ -22,12 +22,13 @@ class Grid2DPosition
         return "x-{$this->x}-y-{$this->y}";
     }
 
-    public function fromString(string $value): self {
-         sscanf($value, 'x-%d-y-%d', $x, $y);
-         $this->setX($x);
-         $this->setY($y);
+    public function fromString(string $value): self
+    {
+        sscanf($value, 'x-%d-y-%d', $x, $y);
+        $this->setX($x);
+        $this->setY($y);
 
-         return $this;
+        return $this;
     }
 
     /**
